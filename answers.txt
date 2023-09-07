@@ -1,1 +1,3 @@
-What is the difference between a merge and a rebase?
+What is a remote repository?
+
+A remote repository is another instance of the repository you're working in that is linked so that changes made to one can be pushed to the other.  It is versions of your project that are hosted on the Internet or network somewhere
