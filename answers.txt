@@ -1,3 +1,8 @@
 What is a remote repository?
 
 A remote repository is another instance of the repository you're working in that is linked so that changes made to one can be pushed to the other.  It is versions of your project that are hosted on the Internet or network somewhere
+
+What is the difference between a merge and a rebase?
+
+git merge is a way of combining changes from one branch into another branch, merging is nice because it’s a non-destructive operation. The existing branches are not changed in any way. This avoids all of the potential pitfalls of rebasing. git rebase is a way of moving the changes from one branch onto another branch. This moves the entire feature branch to begin on the tip of the main branch, effectively incorporating all of the new commits in main. But, instead of using a merge commit, rebasing re-writes the project history by creating brand new commits for each commit in the original branch. The major benefit of rebasing is that you get a much cleaner project history. First, it eliminates the unnecessary merge commits required by git merge. Second, as you can see in the above diagram, rebasing also results in a perfectly linear project history—you can follow the tip of feature all the way to the beginning of the project without any forks. 
+
